@@ -28,12 +28,13 @@ function Skills() {
   };
 
   return (
-    <section>
+    <section style={{ backgroundColor: "#0d0323" }}>
+      <h2 className="skills">Skills</h2>
+      <p className="skills">
+        Always learning new technologies and developing my technical skills
+      </p>
 
-        <h2 className="skills">Skills</h2>
-        <p className="skills">Always learning new technologies and developing my technical skills</p>
-
-      <Carousel 
+      <Carousel
         className="carousel"
         swipeable={false}
         draggable={false}
@@ -46,13 +47,9 @@ function Skills() {
         customTransition="all .5"
         transitionDuration={500}
         containerClass="carousel-container"
-       
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-30-px"
       >
-
-        
-
         <div className="item">
           <img src={meter1} alt="image" />
           <h5>HTML5</h5>
@@ -89,10 +86,6 @@ function Skills() {
           <img src={meter3} alt="image" />
           <h5>Tailwind CSS</h5>
         </div>
-
-
-       
-       
       </Carousel>
 
       <img className="background-image-left" src={colorSharp} />

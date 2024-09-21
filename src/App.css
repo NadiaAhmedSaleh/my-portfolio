@@ -31,7 +31,7 @@ body{
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121316 !important;
+  background-color: #0d0323;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
 }
@@ -103,7 +103,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #0d0323;
 }
 nav.navbar a.navbar-brand {
     width: 20%;
@@ -191,7 +191,7 @@ span.navbar-text {
   transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-  color: #121212;
+  color: white;
 }
 .navbar-text button:hover::before {
 	content: "";
@@ -254,7 +254,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  background-image: url('./assets/img/Dark-Sky.svg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -268,6 +268,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
+  color: white;
 }
 .homeRow{
   display: flex;
@@ -331,7 +332,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skills{
   text-align: center;
-  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #0d0323;
 }
 
 .carousel{
@@ -362,7 +364,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  background-color: #0d0323;
 }
 .project h2 {
 	font-size: 45px;
@@ -524,7 +526,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form input:focus, .contact form textarea:focus {
   background: rgba(255, 255, 255, 1);
-  color: #121212;
+  color: #0d0323;
 }
 .contact form input::placeholder, .contact form textarea::placeholder {
   font-size: 16px;
@@ -532,7 +534,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #fff;
 }
 .contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
-  color: #121212;
+  color: #0d0323;
   opacity: 0.8;
 }
 .contact form button {
@@ -566,4 +568,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button:hover::before {
   width: 100%;
+}
+
+.self-avatar {
+  border-radius: 50%;
 }
