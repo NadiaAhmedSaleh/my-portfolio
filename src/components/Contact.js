@@ -27,12 +27,12 @@ function Contact() {
       e.preventDefault();
       setButtonText('Sending...');
      
-      let response= await fetch ("http://localhost:3000/contact", {       
-      method:"POST",
-      headers: {
-        "Content-Type": "Application/json;charset=utf-8"
-    },
-    body:JSON.stringify(formDetails)
+      let response = await fetch("http://localhost:3030/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "Application/json;charset=utf-8",
+        },
+        body: JSON.stringify(formDetails),
       });
       setButtonText("Send");
       let result= await response.json();
