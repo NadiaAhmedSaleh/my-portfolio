@@ -1,5 +1,5 @@
 import { useState } from "react";
-import contactImg from "../assets/img/illustrator.svg";
+import contactImg from "../assets/img/illustrator2.svg";
 import Container from "react-bootstrap/Container";
 import {  Row , Col } from "react-bootstrap";
 
