@@ -329,11 +329,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
+.skills-section {
+  background:linear-gradient(359deg, #0d0220, #0c274e);
+
+}
 
 .skills{
   text-align: center;
   padding-top: 20px;
-  background-color: #0d0323;
 }
 
 .carousel{
@@ -411,7 +414,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    background: linear-gradient(90.21deg, #b3addf -5.91%, #4A2FBD 111.58%);
     top: 0;
     left: 0;
     z-index: -1;
@@ -451,7 +454,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #b3addf -5.91%, #4A2FBD 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;

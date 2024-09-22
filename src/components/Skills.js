@@ -28,7 +28,7 @@ function Skills() {
   };
 
   return (
-    <section style={{ backgroundColor: "#0d0323" }}>
+    <section className="skills-section">
       <h2 className="skills">Skills</h2>
       <p className="skills">
         Always learning new technologies and developing my technical skills
