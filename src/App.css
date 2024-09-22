@@ -477,6 +477,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-imgbx:hover .proj-text {
   top: 50%;
   opacity: 1;
+  cursor: pointer;
 }
 .proj-text h4 {
   font-size: 30px;
