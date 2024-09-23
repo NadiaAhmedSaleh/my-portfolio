@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import contactImg from "../assets/img/contact-img.svg"
 import Container from "react-bootstrap/Container";
 import {  Row , Col } from "react-bootstrap";
+import { useForm, ValidationError } from '@formspree/react';
+
 
 function Contact() {
     const formInitialDetails={
@@ -12,40 +14,25 @@ function Contact() {
         message:''
     }
 
-    const [formDetails, setFormDetails]=useState(formInitialDetails);
-    const [buttonText, setButtonText]=useState('Send');
-    const [status, setStatus]=useState({});
-
-    const onFormUpdate=(category, value)=>{
-        setFormDetails({
-            ...formDetails,
-            [category]:value
-        })
-    }
     
-    const handleSubmit= async(e)=>{
-      e.preventDefault();
-      setButtonText('Sending...');
-     
-      let response= await fetch ("http://localhost:3000/contact", {       
-      method:"POST",
-      headers: {
-        "Content-Type": "Application/json;charset=utf-8"
-    },
-    body:JSON.stringify(formDetails)
-      });
-      setButtonText("Send");
-      let result= await response.json();
-      setFormDetails(formInitialDetails);
-      if(result.code===200){
-        setStatus({success:true, message:"Message sent succesfuly"})
+ const [buttonText, setButtonText]=useState('Send');
 
-      }else{
-        setStatus({success:false, message:"Something went wrong, please try again later."})
-
+  const cancelCourse = () => { 
+        document.getElementById("Form").reset();
       }
 
-    };
+const [state, handleSubmit] = useForm("xeojbgqr");
+
+useEffect(() => {
+    if(state.succeeded){
+        console.log(state.succeeded);
+        setButtonText("Sent");
+        cancelCourse();
+    }
+    console.log({state});
+    
+}, [state.succeeded])
+
     
     return ( 
     <section className="contact" id="connect">
@@ -59,32 +46,39 @@ function Contact() {
 
             <Col size={12} md={6}>
             <h2>Get In Touch</h2>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} id="Form">
                 <Row>
-                    <Col sm={6}  className="px-1"> <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e)=>onFormUpdate("firstName" , e.target.value)}></input> </Col>
-                    <Col sm={6}  className="px-1"> <input type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e)=>onFormUpdate("lastName" , e.target.value)}></input> </Col>
-                    <Col sm={6}  className="px-1"> <input type="email" value={formDetails.email} placeholder="Email" onChange={(e)=>onFormUpdate("email" , e.target.value)}></input> </Col>
-                    <Col sm={6}  className="px-1"> <input type="phone" value={formDetails.phone} placeholder="Phone" onChange={(e)=>onFormUpdate("phone" , e.target.value)}></input> </Col>
+                    <Col sm={6}  className="px-1"> <input type="text"  placeholder="First Name" ></input> </Col>
+                    <Col sm={6}  className="px-1"> <input type="text"  placeholder="Last Name" ></input> </Col>
+                    <Col sm={6}  className="px-1"> <input type="email" name="email"  placeholder="Email" ></input> </Col>
+                    <ValidationError 
+                    prefix="Email" 
+                     field="email"
+                       errors={state.errors}
+                        />
+                    
+                    <Col sm={6}  className="px-1"> <input type="phone"  placeholder="Phone" ></input> </Col>
                     
                     <Col size={12} className="px-1">
-                     <textarea  rows="6" value={formDetails.message} placeholder="Message" onChange={(e)=>onFormUpdate("message" , e.target.value)}></textarea>
-                     <button type="submit"> <span>{buttonText}</span> </button>
+                     <textarea  rows="6"  placeholder="Message" name="message"></textarea>
+                     <ValidationError 
+                        prefix="Message" 
+                          field="message"
+                           errors={state.errors}
+                            />
+                    
+                     <button type="submit" disabled={state.submitting}> <span>{buttonText}</span> </button>
                     </Col>
-                    {
-                        status.message &&
-                        <Col>
-                        <p className={status.success===false?"danger" : "success"}>
-                            {status.message}
-
-                        </p>
-                        </Col>
-                    }
+                 
                 </Row>
             </form>
             
             </Col>
             </Row>
         </Container>
+
+
+        
 
     </section> );
 }

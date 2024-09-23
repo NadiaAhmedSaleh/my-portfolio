@@ -50,7 +50,7 @@ function Banner() {
         <Container >
             <Row className='homeRow' >
 
-                <Col xs={12} md={8} xl={8} >
+                <Col xs={12} md={8} xl={6} >
                 <span className='tagline'>
 
                     Welcome to my portfolio
@@ -68,11 +68,11 @@ function Banner() {
 
                 <p> Passionate and dedicated Front End Web Developer with a strong
                foundation in programming and coding. Well-versed in HTML, CSS,
-               JavaScript, jQuery, Bootstrap, Typescript, Angularv16, Figma, Git and Github with additional
-               knowledge in C++, Object-Oriented Programming, Data Structures,
-               Algorithms, and Design Patterns. Committed to continuous learning and
+               JavaScript, jQuery,  Bootstrap, Typescript, Angular v16, Figma, Git and Github with additional
+               knowledge  in C++, Object-Oriented Programming, Data Structures,
+               Algorithms,  and Design Patterns. Committed to continuous learning and
                applying modern technologies to create user-friendly and responsive
-               web pages. lately learning React Js, Tailwind Css , Next Js and Eager to contribute my skills and knowledge to a dynamic
+               web pages.  lately learning React Js, Tailwind Css , Next Js and  Eager to contribute my skills and knowledge to a dynamic
                development team</p>
               
                 </Col>

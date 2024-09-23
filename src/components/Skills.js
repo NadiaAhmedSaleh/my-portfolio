@@ -1,13 +1,26 @@
 import "bootstrap/dist/css/bootstrap.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import colorSharp from "../assets/img/color-sharp.png";
+
+//skills
+
+import html5 from "../assets/img/html-5-svgrepo-com.svg";
+import css3 from "../assets/img/css-3-svgrepo-com.svg";
+import js from "../assets/img/javascript-svgrepo-com.svg";
+import jquery from "../assets/img/jquery-svgrepo-com.svg";
+import bootstrap from "../assets/img/bootstrap-svgrepo-com.svg";
+import tailwind from "../assets/img/tailwindcss-icon-svgrepo-com.svg";
+import angular from "../assets/img/angular-svgrepo-com.svg";
+import typescript from "../assets/img/typescript-icon-svgrepo-com.svg";
+import react from "../assets/img/react-svgrepo-com.svg";
+import github from "../assets/img/github-142-svgrepo-com.svg";
+
+
 
 
 function Skills() {
+
+  
 
   const responsive = {
     desktop: {
@@ -28,10 +41,10 @@ function Skills() {
   };
 
   return (
-    <section>
+    <section className="skillssection"  >
 
         <h2 className="skills">Skills</h2>
-        <p className="skills">Always learning new technologies and developing my technical skills</p>
+        <p className="skillsp">Always learning new technologies and developing my technical skills</p>
 
       <Carousel 
         className="carousel"
@@ -54,40 +67,44 @@ function Skills() {
         
 
         <div className="item">
-          <img src={meter1} alt="image" />
+          <img src={html5} alt="image" />
           <h5>HTML5</h5>
         </div>
         <div className="item">
-          <img src={meter1} alt="image" />
+          <img src={css3} alt="image" />
           <h5>CSS3</h5>
         </div>
         <div className="item">
-          <img src={meter1} alt="image" />
+          <img src={js} alt="image" />
           <h5>JavaScript</h5>
         </div>
         <div className="item">
-          <img src={meter2} alt="image" />
+          <img src={jquery} alt="image" />
           <h5>jQuery</h5>
         </div>
         <div className="item">
-          <img src={meter2} alt="image" />
+          <img src={bootstrap} alt="image" />
           <h5>Bootsrap</h5>
         </div>
         <div className="item">
-          <img src={meter2} alt="image" />
+          <img src={typescript} alt="image" />
           <h5>TypeScript</h5>
         </div>
         <div className="item">
-          <img src={meter3} alt="image" />
+          <img src={angular} alt="image" />
           <h5>Angular</h5>
         </div>
         <div className="item">
-          <img src={meter3} alt="image" />
+          <img src={react} alt="image" />
           <h5>React Js</h5>
         </div>
         <div className="item">
-          <img src={meter3} alt="image" />
+          <img src={tailwind} alt="image" />
           <h5>Tailwind CSS</h5>
+        </div>
+        <div className="item">
+          <img src={github} alt="image" />
+          <h5>Github</h5>
         </div>
 
 
@@ -95,7 +112,7 @@ function Skills() {
        
       </Carousel>
 
-      <img className="background-image-left" src={colorSharp} />
+      
     </section>
   );
 }
