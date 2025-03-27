@@ -14,6 +14,7 @@ import angular from "../assets/img/angular-svgrepo-com.svg";
 import typescript from "../assets/img/typescript-icon-svgrepo-com.svg";
 import react from "../assets/img/react-svgrepo-com.svg";
 import github from "../assets/img/github-142-svgrepo-com.svg";
+import nextjs from "../assets/img/nextjs-svgrepo-com.svg"
 
 
 
@@ -41,7 +42,7 @@ function Skills() {
   };
 
   return (
-    <section className="skillssection"  >
+    <section className="skillssection"  id="skills" >
 
         <h2 className="skills">Skills</h2>
         <p className="skillsp">Always learning new technologies and developing my technical skills</p>
@@ -97,6 +98,10 @@ function Skills() {
         <div className="item">
           <img src={react} alt="image" />
           <h5>React Js</h5>
+        </div>
+        <div className="item">
+          <img src={nextjs} alt="image" />
+          <h5>NextJs</h5>
         </div>
         <div className="item">
           <img src={tailwind} alt="image" />

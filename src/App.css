@@ -111,7 +111,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.8px;
-  padding: 0 20px;
+  padding: 0 10px;
   font-size: 18px;
   opacity: 0.75;
 }
@@ -319,6 +319,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 360px;
   
   
+}
+.wrap {
+  display: inline-block; 
+  min-height: 1.2em; 
+  vertical-align: middle; 
+  overflow: hidden; 
 }
 @keyframes updown {
     0% {

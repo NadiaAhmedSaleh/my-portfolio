@@ -2,7 +2,6 @@ import { useState,useEffect } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
-import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from"../assets/img/header-img.svg";
 
 function Banner() {
@@ -49,7 +48,6 @@ function Banner() {
     <section className="banner" id="home">
         <Container >
             <Row className='homeRow' >
-
                 <Col xs={12} md={8} xl={6} >
                 <span className='tagline'>
 
@@ -77,9 +75,9 @@ function Banner() {
               
                 </Col>
 
-              <Col xs={12} md={8} xl={4} >
+              <Col xs={12} md={8} xl={6} >
               <img src={headerImg} alt="Header Img" />
-                </Col>
+              </Col>
             </Row>
         </Container>
     

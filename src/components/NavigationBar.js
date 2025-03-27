@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { useState , useEffect} from 'react';
+import { useState } from 'react';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/github-icon-1-logo-svgrepo-com.svg';
 
@@ -51,9 +51,11 @@ function NavigationBar() {
           <Nav className="me-auto">
             
           <Nav.Link href="#home" className={activeLink==='home'? 'active navbar-link' : 'navbar-link'} onClick={()=>onUpdateActiveLink('home')}>Home</Nav.Link>
-          
+          <Nav.Link href="#experience" className={activeLink==='experience'? 'active navbar-link' : 'navbar-link'} onClick={()=>onUpdateActiveLink('experience')}>Experience</Nav.Link>
           <Nav.Link href="#skills" className={activeLink==='skills'? 'active navbar-link' : 'navbar-link'} onClick={()=>onUpdateActiveLink('skills')}>Skills</Nav.Link>
-            <Nav.Link href="#projects" className={activeLink==='projects'? 'active navbar-link' : 'navbar-link'} onClick={()=>onUpdateActiveLink('projects')}>Projects</Nav.Link>
+          <Nav.Link href="#projects" className={activeLink==='projects'? 'active navbar-link' : 'navbar-link'} onClick={()=>onUpdateActiveLink('projects')}>Projects</Nav.Link>
+          <Nav.Link href="#connect" className={activeLink==='connect'? 'active navbar-link' : 'navbar-link'} onClick={()=>onUpdateActiveLink('connect')}>Contact</Nav.Link>
+
           </Nav>
 
 
@@ -71,7 +73,7 @@ function NavigationBar() {
          
 
               <button className='vvd'>
-              <a className='navButton' href='https://drive.google.com/file/d/1et7CaNM5m64LWPPGyUBRWI5KKfxMhCWd/view?usp=sharing' target='_blank' download="https://drive.google.com/file/d/1et7CaNM5m64LWPPGyUBRWI5KKfxMhCWd/view?usp=sharing">
+              <a className='navButton' href="https://drive.google.com/file/d/1KSxwQPSAshfNNYUyJePlZJ3U7aaBTzou/view?usp=sharing">
 
                 Download CV 
                 </a> 
