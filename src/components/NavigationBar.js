@@ -36,13 +36,13 @@ function NavigationBar() {
     //the cv button
 
 
-    return ( <>
-    
-    <Navbar  expand="lg" className={color? "scrolled" : " "}  id=''navbar >
-      <Container>
-        <Navbar.Brand href="#home">
-         <h2>Nadia Saleh</h2>
-        </Navbar.Brand>
+    return (
+      <>
+        <Navbar expand="lg" className={color ? "scrolled" : " "} id="" navbar>
+          <Container>
+            <Navbar.Brand href="#home">
+              <h2>Nadia Saleh</h2>
+            </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
 

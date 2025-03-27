@@ -42,12 +42,13 @@ function Skills() {
   };
 
   return (
-    <section className="skillssection"  id="skills" >
+    <section className="skillssection" id="skills">
+      <h2 className="skills">Skills</h2>
+      <p className="skillsp">
+        Always learning new technologies and developing my technical skills
+      </p>
 
-        <h2 className="skills">Skills</h2>
-        <p className="skillsp">Always learning new technologies and developing my technical skills</p>
-
-      <Carousel 
+      <Carousel
         className="carousel"
         swipeable={false}
         draggable={false}
@@ -60,13 +61,9 @@ function Skills() {
         customTransition="all .5"
         transitionDuration={500}
         containerClass="carousel-container"
-       
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-30-px"
       >
-
-        
-
         <div className="item">
           <img src={html5} alt="image" />
           <h5>HTML5</h5>
@@ -111,13 +108,7 @@ function Skills() {
           <img src={github} alt="image" />
           <h5>Github</h5>
         </div>
-
-
-       
-       
       </Carousel>
-
-      
     </section>
   );
 }
