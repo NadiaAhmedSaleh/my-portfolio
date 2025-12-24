@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.027d8222.css",
-    "main.js": "/my-portfolio/static/js/main.30bdf6c7.js",
+    "main.css": "/my-portfolio/static/css/main.e30c8c10.css",
+    "main.js": "/my-portfolio/static/js/main.2619b671.js",
     "static/js/453.41811d64.chunk.js": "/my-portfolio/static/js/453.41811d64.chunk.js",
+    "static/media/Prayer react.png": "/my-portfolio/static/media/Prayer react.47ef482e1802dfa02813.png",
     "static/media/daniels.png": "/my-portfolio/static/media/daniels.267587a81b28d163d7e7.png",
     "static/media/cooking.png": "/my-portfolio/static/media/cooking.df90f5d8df4944a16235.png",
     "static/media/Quotes.png": "/my-portfolio/static/media/Quotes.c4140dc30495b8d1c1e8.png",
     "static/media/weather.png": "/my-portfolio/static/media/weather.4d16aa3c5c30b753c78e.png",
     "static/media/ecommerce.png": "/my-portfolio/static/media/ecommerce.b63874965a2d9a548ee2.png",
+    "static/media/Angular atc.png": "/my-portfolio/static/media/Angular atc.712ef3c5f50201bc3382.png",
+    "static/media/EPFL.png": "/my-portfolio/static/media/EPFL.d19cafc4c5808bfc6c85.png",
     "static/media/nti web design.png": "/my-portfolio/static/media/nti web design.2abfe37a53c59c1da37b.png",
+    "static/media/EFSET.png": "/my-portfolio/static/media/EFSET.bece904cc194de5e2778.png",
     "static/media/frontend.png": "/my-portfolio/static/media/frontend.ce00389b40297eb4daa5.png",
     "static/media/basics.jpg": "/my-portfolio/static/media/basics.efc8fdbc3af156d32782.jpg",
     "static/media/header-img.svg": "/my-portfolio/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg",
     "static/media/sign-up.png": "/my-portfolio/static/media/sign-up.32c652f11630fd3d543b.png",
     "static/media/CentraNo2-Bold.ttf": "/my-portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/my-portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
-    "static/media/adminDashboard.png": "/my-portfolio/static/media/adminDashboard.a164989f66e6c8f87ff0.png",
     "static/media/CentraNo2-Book.ttf": "/my-portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
     "static/media/reactphoto.avif": "/my-portfolio/static/media/reactphoto.4cfbc3decbf4753e9a85.avif",
-    "static/media/todolist.png": "/my-portfolio/static/media/todolist.292fedcb01955d95e1a8.png",
-    "static/media/userdashboard.png": "/my-portfolio/static/media/userdashboard.e2730eda518ab52c60bd.png",
     "static/media/sprints.jpeg": "/my-portfolio/static/media/sprints.dab0d1b0f7b451bd531b.jpeg",
     "static/media/transactions.png": "/my-portfolio/static/media/transactions.5a824713d82e2a7438d7.png",
     "static/media/contact-img.svg": "/my-portfolio/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
@@ -43,12 +44,12 @@
     "static/media/angular-svgrepo-com.svg": "/my-portfolio/static/media/angular-svgrepo-com.8d025088a1ff1e8c05194f4ddab7a0ad.svg",
     "static/media/css-3-svgrepo-com.svg": "/my-portfolio/static/media/css-3-svgrepo-com.315b8fdb9dbf75ae965b80bf368895cd.svg",
     "static/media/html-5-svgrepo-com.svg": "/my-portfolio/static/media/html-5-svgrepo-com.0107c93943a8f415b5db64ebb0a9d12d.svg",
-    "main.027d8222.css.map": "/my-portfolio/static/css/main.027d8222.css.map",
-    "main.30bdf6c7.js.map": "/my-portfolio/static/js/main.30bdf6c7.js.map",
+    "main.e30c8c10.css.map": "/my-portfolio/static/css/main.e30c8c10.css.map",
+    "main.2619b671.js.map": "/my-portfolio/static/js/main.2619b671.js.map",
     "453.41811d64.chunk.js.map": "/my-portfolio/static/js/453.41811d64.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.027d8222.css",
-    "static/js/main.30bdf6c7.js"
+    "static/css/main.e30c8c10.css",
+    "static/js/main.2619b671.js"
   ]
 }
