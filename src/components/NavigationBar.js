@@ -73,7 +73,7 @@ function NavigationBar() {
          
 
               <button className='vvd'>
-              <a className='navButton' href="https://drive.google.com/file/d/1KSxwQPSAshfNNYUyJePlZJ3U7aaBTzou/view?usp=sharing">
+              <a className='navButton' href="https://drive.google.com/file/d/1Z1AMZ2oIvsewUgxDCVXETWjXMt7lgOkE/view?usp=sharing">
 
                 Download CV 
                 </a> 

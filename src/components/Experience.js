@@ -13,7 +13,7 @@ function Experience() {
 
         <Container>
             <Row className='homeRow my-4'>
-            <Col xs={12} md={8} xl={8} className='mx-2'>
+            <Col xs={12} md={8} xl={8} >
             <h4> Front-end Developer</h4>
             <h5> Bayo Solutions - RemoteCoders </h5>
 
@@ -24,12 +24,13 @@ function Experience() {
             <p>Proficient in modern technologies, including React.js, Next.js, Zustand for state management, SCSS, GitHub and Jira for workflow</p>
             </Col>
 
-           <Col xs={12} md={8} xl={3}>
+           <Col xs={12} md={6} xl={3} className="experience-logos">
            <img
            src={Bayo}
            width="200px"
            height="150px"
            alt="bayosolutions"
+           className="experience-img"
            onClick={() => {window.open("https://www.bayo.ch/de/" , "_blank")}}
            />    
 
@@ -38,6 +39,7 @@ function Experience() {
            width="200px" 
            height="150px"
            alt="remotecoders"
+           className="experience-img"
            onClick={() => { window.open("https://remotecoders.org/" , "_blank")}}
            />
            

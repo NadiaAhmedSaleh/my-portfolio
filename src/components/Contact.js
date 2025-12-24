@@ -67,7 +67,7 @@ useEffect(() => {
                            errors={state.errors}
                             />
                     
-                     <button type="submit" disabled={state.submitting}> <span>{buttonText}</span> </button>
+                     <button type="submit" disabled={state.submitting} className="d-block d-inline-block mx-auto"> <span>{buttonText}</span> </button>
                     </Col>
                  
                 </Row>

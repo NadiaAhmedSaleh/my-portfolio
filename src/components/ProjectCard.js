@@ -3,13 +3,10 @@ import Card from "react-bootstrap/Card";
 
 function ProjectCard({ title, description, imgUrl , link}) {
   return (
-    <Col xs={12} md={6} xl={4}>
+    <Col xs={12} sm={6} md={4} className="mb-4 d-flex justify-content-center">
       <div>
       
-          <Card
-            style={{ width: "20rem", height: "10rem" }}
-            className="proj-imgbx"
-          >
+          <Card className="proj-imgbx project-card">
             <Card.Img variant="top" src={imgUrl} />
             <Card.Body >
               <Card.Text className="proj-text">

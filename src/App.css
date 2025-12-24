@@ -25,6 +25,8 @@
 html{
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
+    overflow-x: hidden;
+
 }
 body{
   
@@ -34,6 +36,7 @@ body{
   background-color: #121316 !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
+   overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -62,12 +65,24 @@ input:focus, textarea:focus, select:focus {
   outline: none;
 }
 
-@media (min-width:1700px) {
-	main .container {
-		max-width: 100%;
-		padding: 0 150px;
-	}
+
+.project-card img {
+  height: 160px;
+  object-fit: cover;
 }
+
+.project-card {
+  width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
 
 p.success {
 	color: green;
@@ -77,13 +92,6 @@ p.danger {
 	color: red;
 }
 
-.container{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 20px;
-  margin-right: 20px;
-}
 
 
 /************ Navbar Css ************/
@@ -252,11 +260,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
-.Container{
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
@@ -383,11 +386,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 10px;
 }
 
-
-
-
-
-
 .project {
   padding: 80px 0;
   position: relative;
@@ -468,9 +466,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
-  
- 
- 
+}
+
+.project-card .card-body {
+  padding: 0.2rem 0.75rem;
 }
 .proj-imgbx::before {
   content: "";
@@ -531,10 +530,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   padding-bottom: 30px;
 }
-
-
-
-
 
 .contact {
   background: linear-gradient(-225deg, #2D8C8D 0%, #476ea0 48%,  #56317a 100%);
@@ -620,11 +615,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   
 }
 
-.cont{
-  justify-content:space-evenly;
-
-}
-
 .footer img{
 
   width: 50px;
@@ -635,6 +625,27 @@ footer .icons{
   padding-right: 40px;
   padding-left: 40px;
 }
+
+
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .experience-logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.project .nav.nav-pills {
+  width:  100%;
+}
+}
+
+
+
+
+
 
 
 

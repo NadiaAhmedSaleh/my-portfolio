@@ -4,16 +4,15 @@ import Nav from "react-bootstrap/Nav";
 import ProjectCard from "./ProjectCard";
 
 //react projects
-
-import admin from "../assets/img/adminDashboard.png";
+import prayerTime from "../assets/img/Prayer react.png"
 
 
 //angular projects
 
 import ecommerce from "../assets/img/ecommerce.png";
-import userdashboard from "../assets/img/userdashboard.png";
 import cooking from "../assets/img/cooking.png";
-import transactions from "../assets/img/transactions.png"
+import transactions from "../assets/img/transactions.png";
+import angularDashboard from "../assets/img/Angular atc.png";
 
  //html5 css3 js projects
 
@@ -21,7 +20,6 @@ import weather from "../assets/img/weather.png";
 import daniels from "../assets/img/daniels.png";
 import quotes from "../assets/img/Quotes.png";
 import signup from "../assets/img/sign-up.png";
-import todo from "../assets/img/todolist.png"
 
 
 function Projects() {
@@ -35,16 +33,22 @@ function Projects() {
       link:"https://nadiaahmedsaleh.github.io/Ecommerce-App/register"
     },
     {
-      title: "UserDashboard",
-      description: "Click to check",
-      imgUrl: userdashboard,
-      link:"https://nadiaahmedsaleh.github.io/DynamicUserDashboard/home"
+      title:"Dashboard",
+      description:"Click to check",
+      imgUrl:angularDashboard,
+      link:"https://nadiaahmedsaleh.github.io/ATC-Task/"
     },
     {
       title: "Cooking lover",
       description: "Click to check",
       imgUrl: cooking,
       link:"https://nadiaahmedsaleh.github.io/YummyMeals/home"
+    },
+    {
+      title: "Prayer Times",
+      description: "Click to check",
+      imgUrl: prayerTime,
+      link:"https://nadiaahmedsaleh.github.io/Prayer-Time/"
     },
     {
       title: "Transactions' Data",
@@ -77,12 +81,7 @@ function Projects() {
       imgUrl: daniels,
       link:"https://nadiaahmedsaleh.github.io/Daniels/"
     },
-    {
-      title: "ToDo List",
-      description: "Click to check",
-      imgUrl: todo,
-      link:"https://nadiaahmedsaleh.github.io/CodeAlpha_ToDoList/"
-    },
+
   ]
 
   const projects = [
@@ -110,12 +109,6 @@ function Projects() {
       imgUrl: daniels,
       link:"https://nadiaahmedsaleh.github.io/Daniels/"
     },
-    {
-      title: "ToDo List",
-      description: "Click to check",
-      imgUrl: todo,
-      link:"https://nadiaahmedsaleh.github.io/CodeAlpha_ToDoList/"
-    },
   ];
 
   const angularProjects=[
@@ -126,11 +119,11 @@ function Projects() {
       imgUrl: ecommerce,
       link:"https://nadiaahmedsaleh.github.io/Ecommerce-App/register"
     },
-    {
-      title: "UserDashboard",
-      description: "Click to check",
-      imgUrl: userdashboard,
-      link:"https://nadiaahmedsaleh.github.io/DynamicUserDashboard/home"
+      {
+      title:"Dashboard",
+      description:"Click to check",
+      imgUrl:angularDashboard,
+      link:"https://nadiaahmedsaleh.github.io/ATC-Task/"
     },
     {
       title: "Cooking lover",
@@ -142,22 +135,22 @@ function Projects() {
       title: "Transactions' Data",
       description: "Click to check",
       imgUrl: transactions,
-      link:"https://nadiaahmedsaleh.github.io/Customers-Data/home"
+      link:"https://nadiaahmedsaleh.github.io/Customers-Data"
     },
 
   ]
 
-  const reactProjects=[
+  // const reactProjects=[
      
-    {
-      title: "Admin Dashboard",
-      description: "Click to check",
-      imgUrl: admin,
-      link:"https://nadiaahmedsaleh.github.io/Daniels/"
-    },
+  //   {
+  //     title: "Admin Dashboard",
+  //     description: "Click to check",
+  //     imgUrl: admin,
+  //     link:"https://nadiaahmedsaleh.github.io/Daniels/"
+  //   },
    
 
-  ]
+  // ]
   
   return (
     <section className="project" id="projects">

@@ -66,11 +66,10 @@ function Banner() {
 
                 <p> Passionate and dedicated Front End Web Developer with a strong
                foundation in programming and coding. Well-versed in HTML, CSS,
-               JavaScript, jQuery,  Bootstrap, Typescript, Angular v16, Figma, Git and Github with additional
-               knowledge  in C++, Object-Oriented Programming, Data Structures,
-               Algorithms,  and Design Patterns. Committed to continuous learning and
+               JavaScript, jQuery,  Bootstrap, Typescript, Angular v16, ReactJs, NextJs, Figma, Git and Github with additional
+               knowledge  in C++ and basics of programming, Committed to continuous learning and
                applying modern technologies to create user-friendly and responsive
-               web pages.  lately learning React Js, Tailwind Css , Next Js and  Eager to contribute my skills and knowledge to a dynamic
+               web pages and Eager to contribute my skills and knowledge to a dynamic
                development team</p>
               
                 </Col>
